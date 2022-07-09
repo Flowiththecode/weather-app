@@ -78,3 +78,9 @@ section {
   box-shadow: 10px 10px 20px rgba(168, 30, 137, 0.2);
   border: none;
 }
+.source-link {
+  font-size: 14px;
+  display: block;
+  margin-left: 67px;
+  margin-top: 86px;
+}
