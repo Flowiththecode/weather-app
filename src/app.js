@@ -90,14 +90,18 @@ function getCurrentLocation(event) {
 
 function displayFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#main-temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function displayCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#main-temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 

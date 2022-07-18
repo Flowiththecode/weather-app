@@ -35,7 +35,14 @@ h2 .units {
 
 a {
   text-decoration: none;
+  cursor: default;
 }
+
+.active {
+  color: black;
+  cursor: default;
+}
+
 .container {
   padding: 20px 20px;
   margin: 86px auto;
