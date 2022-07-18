@@ -120,4 +120,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
 searchCity("Bristol");
-showCitydata("Bristol");
