@@ -14,15 +14,10 @@ h1 {
   font-size: 58px;
   text-transform: capitalize;
 }
-.temperature h2 {
+h2 {
   font-style: none;
   font-size: 42px;
 }
-
-.units h2 {
-  font-size: 14px;
-}
-
 section {
   text-align: left;
   position: relative;
