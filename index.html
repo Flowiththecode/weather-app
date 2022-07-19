@@ -26,164 +26,200 @@
   <body>
     <!--Container wraps all content-->
     <div class="container">
-      <!---Search box and buttons-->
-      <form id="search-form">
-        <div class="row">
-          <div class="col-8">
-            <div class="input-group">
-              <!---Search bar-->
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter your city"
-                id="city-input"
-              />
-              <div class="input-group-append">
-                <!---Search button-->
-                <input
-                  class="btn btn-outline-secondary"
-                  id="search-button"
-                  type="submit"
-                  value="Search"
-                />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <!---Search box and buttons-->
+          <form id="search-form">
+            <div class="row">
+              <div class="col-8">
+                <div class="input-group">
+                  <!---Search bar-->
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your city"
+                    id="city-input"
+                  />
+                  <div class="input-group-append">
+                    <!---Search button-->
+                    <input
+                      class="btn btn-outline-secondary"
+                      id="search-button"
+                      type="submit"
+                      value="Search"
+                    />
 
-                <!---Find me button-->
-                <input
-                  class="btn btn-outline-secondary"
-                  id="findme-button"
-                  type="submit"
-                  value="Find me!"
-                />
+                    <!---Find me button-->
+                    <input
+                      class="btn btn-outline-secondary"
+                      id="findme-button"
+                      type="submit"
+                      value="Find me!"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </form>
+          </form>
 
-      <header>
-        <!---City-->
-        <h1><span id="city-name">Bristol</span></h1>
-        <!---Temperature-->
-        <h2>
-          <span class="temperature" id="main-temperature">20</span
-          ><a href="#" id="celsius-link" class="active"><small class="units"
-            >°C</a> | <a href="#" id="fahrenheit-link">°F</a></small
+          <header>
+            <!---City-->
+            <h1><span id="city-name">Bristol</span></h1>
+            <!---Temperature-->
+            <h2>
+              <span class="temperature" id="main-temperature">20</span
+              ><small class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></small
+              >
+            </h2>
+            <!---Weather description-->
+            <div class="weather-description" id="description">Mostly sunny</div>
+          </header>
+          <!---Date and time-->
+          <div class="date-time" id="date">
+            Friday 27th May 2022
+            <strong><span class="time">16:14</span></strong>
+          </div>
+          <!---Weather details-->
+
+          <div class="row weather-conditions">
+            <div class="col-md-6">
+              <ul>
+                <li>
+                  <div class="humid">
+                    Humidity: <span id="humidity"></span>%
+                  </div>
+                </li>
+
+                <li>
+                  <div class="wind">Wind: <span id="wind"></span>mph</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!---Illustration-->
+          <img
+            class="weather-icon"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="clear"
+            id="icon"
+          />
+
+          <!---Weather cards-->
+          <div class="weather-cards">
+            <div class="row">
+              <!---Monday-->
+              <div class="col">
+                <div class="card" style="height: 11rem" style="width: 8rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Mon</h5>
+                    <p class="card-text">
+                      <img
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>16°C</strong>
+
+                      8°C
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!---Tuesday-->
+              <div class="col">
+                <div class="card" style="height: 11rem" style="width: 6rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Tues</h5>
+                    <p class="card-text">
+                      <img
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>16°C</strong>
+
+                      7°C
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!---Wednesday-->
+              <div class="col">
+                <div class="card" style="height: 11rem" style="width: 6rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Weds</h5>
+                    <p class="card-text">
+                      <img
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>18°C</strong>
+
+                      7°C
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!---Thursday-->
+              <div class="col">
+                <div class="card" style="height: 11rem" style="width: 6rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Thurs</h5>
+                    <p class="card-text">
+                      <img
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>20°C</strong>
+
+                      8°C
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!---Friday-->
+              <div class="col">
+                <div class="card" style="height: 11rem" style="width: 6rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Fri</h5>
+                    <p class="card-text">
+                      <img
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>21°C</strong>
+                      11°C
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!---Weather-cards-->
+            </div>
+            <!---Row-->
+          </div>
+
+          <!---Weather app-->
+        </div>
+        <p class="source-link">
+          <a
+            href="https://github.com/Flowiththecode/weather-app"
+            target="_blank"
+            >Open-source code</a
           >
-        </h2>
-        <!---Weather description-->
-        <div class="weather-description" id="description">Mostly sunny</div>
-      </header>
-      <!---Date and time-->
-      <div class="date-time" id="date">
-        Friday 27th May 2022
-        <strong><span class="time">16:14</span></strong>
+          by Florence Wigens
+        </p>
+        <!---Weather app wrapper-->
       </div>
-      <!---Weather details-->
-      <section>
-        <div class="row">
-          <div class="col-12">
-            <div class="precipitation">
-              Precipitation: <span id="precipitation"></span>%
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="humid">Humidity: <span id="humidity"></span>%</div>
-          </div>
-          <div class="col-12">
-            <div class="wind">Wind: <span id="wind"></span>mph</div>
-          </div>
-        </div>
-      </section>
-      <!---Illustration-->
-      <img
-        class="weather-woman-yellow"
-        src="http://openweathermap.org/img/wn/10d@2x.png"
-        alt="clear"
-        id="icon"
-      />
-
-      <!---Weather cards-->
-      <div class="weather-cards">
-        <div class="row">
-          <!---Monday-->
-          <div class="col">
-            <div class="card" style="height: 11rem" style="width: 8rem">
-              <div class="card-body">
-                <h5 class="card-title">Mon</h5>
-                <p class="card-text">
-                  <strong>16°C</strong>
-                  <br />
-                  /8°C
-                </p>
-              </div>
-            </div>
-          </div>
-          <!---Tuesday-->
-          <div class="col">
-            <div class="card" style="height: 11rem" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Tues</h5>
-                <p class="card-text">
-                  <strong>16°C</strong>
-                  <br />
-                  /7°C
-                </p>
-              </div>
-            </div>
-          </div>
-          <!---Wednesday-->
-          <div class="col">
-            <div class="card" style="height: 11rem" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Weds</h5>
-                <p class="card-text">
-                  <strong>18°C</strong>
-                  <br />
-                  /7°C
-                </p>
-              </div>
-            </div>
-          </div>
-          <!---Thursday-->
-          <div class="col">
-            <div class="card" style="height: 11rem" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Thurs</h5>
-                <p class="card-text">
-                  <strong>20°C</strong>
-                  <br />
-                  /8°C
-                </p>
-              </div>
-            </div>
-          </div>
-          <!---Friday-->
-          <div class="col">
-            <div class="card" style="height: 11rem" style="width: 6rem">
-              <div class="card-body">
-                <h5 class="card-title">Fri</h5>
-                <p class="card-text">
-                  <strong>21°C</strong>
-                  <br />
-                  /11°C
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!---Weather-cards-->
-        </div>
-        <!---Row-->
-      </div>
-
       <!---Container wraps all content-->
     </div>
-    <p class="source-link">
-      <a href="https://github.com/Flowiththecode/weather-app" target="_blank"
-        >Open-source code</a
-      >
-      by Florence Wigens
-    </p>
+
     <script src="src/app.js"></script>
   </body>
 </html>

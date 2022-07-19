@@ -1,6 +1,5 @@
 body {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-
   font-family: "Roboto Flex", sans-serif;
 }
 
@@ -16,11 +15,13 @@ h1 {
   text-transform: capitalize;
 }
 
-section {
-  text-align: left;
+.weather-conditions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   position: relative;
-  top: -75px;
-  left: 440px;
+  top: -53px;
+  right: -423px;
   font-size: 15px;
 }
 
@@ -44,13 +45,20 @@ a {
 }
 
 .container {
-  padding: 20px 20px;
-  margin: 86px auto;
-  position: relative;
-  max-width: 660px;
-  max-height: 470px;
+  padding: 20px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
   background: pink;
   border: 2px;
+  width: 650px;
+  height: 500px;
   border-radius: 20px;
   box-shadow: inset 5px 5px 20px 3px rgba(241, 56, 126, 0.1);
 }
@@ -66,11 +74,10 @@ a {
   right: -421px;
 }
 
-.weather-woman-yellow {
+.weather-icon {
   position: relative;
-  top: -209px;
-  right: -20px;
-  max-width: 180px;
+  top: -188px;
+  left: 52px;
 }
 
 .weather-description {
@@ -79,9 +86,10 @@ a {
 
 .weather-cards {
   position: relative;
-  top: -172px;
+  top: -104px;
+  bottom: 6px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .card {
@@ -91,13 +99,11 @@ a {
 }
 
 .card:hover {
-  cursor: pointer;
+  cursor: default;
   box-shadow: 10px 10px 20px rgba(168, 30, 137, 0.2);
   border: none;
 }
 .source-link {
   font-size: 14px;
-  display: block;
-  margin-left: 67px;
-  margin-top: 86px;
+  position: relative;
 }
