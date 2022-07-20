@@ -40,6 +40,52 @@ function formattedDate(date) {
   return `${day} ${month} ${calenderDate}, ${year} <strong>${hours}:${minutes}</strong>`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast-cards");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col">
+                <div class="card" style="height: 11rem" style="width: 8rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Mon</h5>
+                    <p class="card-text">
+                      <img
+                        src="https://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>16°C</strong>
+
+                      8°C
+                    </p>
+                  </div>
+                </div>
+              </div>`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col">
+                <div class="card" style="height: 11rem" style="width: 8rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Mon</h5>
+                    <p class="card-text">
+                      <img
+                        src="https://openweathermap.org/img/wn/10d@2x.png"
+                        alt=""
+                        width="50"
+                      />
+                      <strong>16°C</strong>
+
+                      8°C
+                    </p>
+                  </div>
+                </div>
+              </div>`;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formattedDate(currentTime);
@@ -120,3 +166,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
 searchCity("Bristol");
+displayForecast();

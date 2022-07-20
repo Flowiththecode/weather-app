@@ -88,6 +88,8 @@ a {
   position: relative;
   top: -104px;
   bottom: 6px;
+  width: 100px;
+  height: 80px;
   text-align: center;
   font-size: 14px;
 }
