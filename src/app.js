@@ -43,45 +43,32 @@ function formattedDate(date) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast-cards");
 
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `<div class="col">
-                <div class="card" style="height: 11rem" style="width: 8rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Mon</h5>
-                    <p class="card-text">
-                      <img
-                        src="https://openweathermap.org/img/wn/10d@2x.png"
-                        alt=""
-                        width="50"
-                      />
-                      <strong>16°C</strong>
-
-                      8°C
-                    </p>
-                  </div>
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+                 <div class="card" style="height: 10rem" style="width: 6rem">
+                <div class="card-body">
+                <div class="weather-forecast-date" id="weather-forecast-date">
+                  Tues
+                </div>
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  alt=""
+                  width="50"
+                />
+                <span class="weather-forecast-temperature-max">
+                  <strong>16°C</strong></span
+                >
+                <span class="weather-forecast-temperature-min">7</span>
+                </div>
                 </div>
               </div>`;
-  forecastHTML =
-    forecastHTML +
-    `<div class="col">
-                <div class="card" style="height: 11rem" style="width: 8rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Mon</h5>
-                    <p class="card-text">
-                      <img
-                        src="https://openweathermap.org/img/wn/10d@2x.png"
-                        alt=""
-                        width="50"
-                      />
-                      <strong>16°C</strong>
+  });
 
-                      8°C
-                    </p>
-                  </div>
-                </div>
-              </div>`;
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
