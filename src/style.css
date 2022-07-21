@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Roboto Flex", sans-serif #6c757d;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
 }
 
 h1 {
-  font-size: 58px;
+  font-size: 56px;
   text-transform: capitalize;
 }
 
@@ -23,6 +23,10 @@ h1 {
   top: -53px;
   right: -423px;
   font-size: 15px;
+}
+
+.weather-description {
+  text-transform: capitalize;
 }
 
 h2 .temperature {
@@ -40,7 +44,7 @@ a {
 }
 
 .active {
-  color: black;
+  color: #6c757d;
   cursor: default;
 }
 
@@ -56,6 +60,7 @@ a {
 .weather-app {
   padding: 20px;
   background: pink;
+  color: #6c757d;
   border: 2px;
   width: 650px;
   height: 430px;
@@ -82,9 +87,14 @@ a {
   font-size: 20px;
 }
 
+.weather-cards row {
+  align-items: center;
+}
+
 .card-body {
   text-align: center;
   font-size: 14px;
+  padding: 10px;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   transition: all 2ms ease-in-out;
   border: inset 1px #fff1eb;
