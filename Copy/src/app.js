@@ -88,3 +88,13 @@ let currentLocation = document.querySelector("#findme-button");
 currentLocation.addEventListener("submit", getCurrentLocation);
 
 searchCity("Bristol");
+function searchLocation(response) {
+  let apiKey = "54ffc4aa460e0f3c4a21790274ca6bae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${response.data.coords.latitude}&lon=${response.data.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showCitydata);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
