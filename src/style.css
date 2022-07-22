@@ -34,10 +34,6 @@ h2 .temperature {
   font-size: 48px;
 }
 
-h2 .units {
-  font-size: 16px;
-}
-
 a {
   text-decoration: none;
   cursor: default;
@@ -81,6 +77,16 @@ a {
   position: relative;
   top: -170px;
   left: 52px;
+}
+.temperature {
+  position: relative;
+  right: -23px;
+}
+.units {
+  position: relative;
+  top: -22px;
+  right: -20px;
+  font-size: 16px;
 }
 
 .weather-description {
