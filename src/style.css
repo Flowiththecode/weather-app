@@ -79,7 +79,7 @@ a {
 
 .weather-icon {
   position: relative;
-  top: -188px;
+  top: -170px;
   left: 52px;
 }
 
@@ -94,7 +94,7 @@ a {
 
 .card-body {
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   transition: all 2ms ease-in-out;
