@@ -50,10 +50,10 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `<div class="col-2">
-                 <div class="card" style="height: 10rem" style="width: 6rem">
+                 <div class="card" style="height: 9rem" style="width: 6rem">
                 <div class="card-body">
                 <div class="weather-forecast-date" id="weather-forecast-date">
-                  ${day}
+                  Tues
                 </div>
                 <img
                   src="https://openweathermap.org/img/wn/10d@2x.png"
@@ -64,9 +64,10 @@ function displayForecast() {
                   <strong>16°C</strong></span
                 >
                 <span class="weather-forecast-temperature-min">7</span>
+                
                 </div>
-                </div>
-              </div>`;
+              </div>
+            </div>`;
   });
 
   forecastHTML = forecastHTML + `</div>`;

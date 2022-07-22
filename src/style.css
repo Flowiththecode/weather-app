@@ -87,8 +87,9 @@ a {
   font-size: 20px;
 }
 
-.weather-cards row {
-  align-items: center;
+.weather-cards {
+  position: relative;
+  top: -106px;
 }
 
 .card-body {
